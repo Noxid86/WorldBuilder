@@ -11,15 +11,17 @@ const promise = require('promise');
 const db=mysql.createConnection({
   host    :'localhost',
   user    :'Dixon',
-  password:'Octobersky##86',
-  database:'Dixons_Fictions',
+  password:'',
+  database:'',
 });
+
 const app = express();
 db.connect((err)=> {
   if(err){
     throw err;
   }
 });
+
 // ***********************
 // TO BE IMPLEMENTED:
 // + MAKE A DATABASE INSTALLER
